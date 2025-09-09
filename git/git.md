@@ -7,47 +7,76 @@ git push --set-upstream origin new-branch
 
 # Merging:
 git checkout main
-deretter kjør
-"git merge new-branch"
+
+then run
+
+```
+git merge new-branch
+```
+
 
 
 # Delete a branch:
+```
 git branch -a
 git branch --delete alpha
 git push origin --delete alpha
+```
+
 On another maskin, deleted branch may still exist, do this:
+```
 git fetch -p
+```
 
 # Rename the local main branch
+```
 git branch -m master main
+```
 or
+```
 git branch -m main master
+```
 
 # Tagging:
 Local tag:
+```
 git tag -a v1.4 -m "my version 1.4"
 git tag -l
 git push origin v1.4
+```
 
 Revert to a tag:
+```
 git reset --hard v1.4
+```
 
 
 # Multi-repo
 show remote repositories:
+```
 git remote -v
+```
 
 https://medium.com/swlh/how-to-add-a-second-remote-to-a-local-repository-7d0e36f18d58
+
+```
 git remote add <shortcut-name-of-second-repository> <url>
+```
 e.g.
+```
 git remote add secondRemoteServerName "some url"
+```
 
 list all the remote repositories in detail:
+```
 git remote -v show
+```
 
 change the default remote repository (see https://kodekloud.com/blog/change-remote-origin-in-git/#:~:text=To%20change%20the%20remote%20origin%20URL%2C%20use%20the%20git%20remote,URL%20or%20an%20SSH%20URL.)
 
+```
 git remote set-url origin https://gitlab.com/KodeKloud/repository-1.git
+```
 
 
 
