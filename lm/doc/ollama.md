@@ -36,12 +36,25 @@ ollama run llama3
 ollama list
 ```
 
-# Install a model
+# Install and update a model
 Go the website and find the model of your choice, choose the version and size and copy-paste the command on the page. e.g.
 
 ```
 ollama run deepseek-r1:1.5b
 ```
+
+Update
+```
+ollama pull deepseek-r1:1.5b
+
+```
+
+Remove
+```
+ollama rm deepseek-r1:1.5b
+```
+
+
 
 # Huggingface
 
